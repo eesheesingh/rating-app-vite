@@ -1,0 +1,65 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ensures full viewport height */
+}
+
+.card {
+  width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #646cff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: border-width 0.1s ease;
+  -webkit-transition: border-width 0.1s ease;
+  -moz-transition: border-width 0.1s ease;
+  -ms-transition: border-width 0.1s ease;
+  -o-transition: border-width 0.1s ease;
+}
+
+.card:hover {
+  border-width: 10px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.star {
+  cursor: pointer;
+  font-size: 40px; /* Increased star size */
+  transition: transform 0.2s ease, color 0.2s ease;
+  margin: 0 5px; /* Spacing between stars */
+}
+
+.star.selected {
+  color: rgb(255, 187, 0); /* Brighter yellow for selected stars */
+}
+
+.rating-section {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.rating-section p {
+  font-size: 18px; /* Adjusted font size */
+  margin-bottom: 8px; /* Spacing between paragraphs */
+  color: #666; /* Text color */
+}
